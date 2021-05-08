@@ -1,0 +1,141 @@
+body{
+  width: 100vw;
+  height: auto;
+}
+.container{
+  width: 80vw;
+  height: 70vh;
+  background-color: hsl(233, 47%, 7%);
+  margin: 5rem auto;
+  position: relative;
+}
+.grid-container{
+  width: 60vw;
+  height: 50vh;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 4.5rem;
+  margin-left: 7rem;
+}
+.box2 img{
+  height: 330px;
+  width: 400px;
+}
+.img-box{
+  width: 400px;
+  height: 330px;
+  background-color: hsl(277, 64%, 61%);
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+  border-radius: 5px 5px 5px 5px;
+
+}
+.box1{
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 2rem;
+  font-weight: 400,700;
+}
+.box1 p{
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+span{
+  color: hsl(277, 64%, 61%);
+}
+.template-container{
+  display: flex;
+  margin-top: 2rem;
+
+}
+.companies{
+   width: 5rem;
+   font-weight: bold;
+}
+.companies .co{
+  margin: 2px;
+}
+.template{
+  width: 5rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+.template .te{
+  margin: 2px;
+}
+.queries{
+  width: 5rem;
+  margin-left: 2rem;
+  font-weight: bold;
+}
+.queries .qu{
+  margin: 2px;
+}
+@media (max-width:700px) {
+     *{
+       margin: 0;
+       padding: 0;
+     }
+
+   .grid-container{
+     width: 400px;
+     height: auto;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr, 1fr;
+     margin-left: 6rem;
+
+   }
+   .container{
+     margin:0;
+     width: 100vw;
+     height: 120vh;
+     position: relative;
+   }
+   .box2 img{
+     height: 330px;
+     width: 400px;
+   }
+   .img-box{
+     flex-direction: column-reverse;
+     bottom: 0;
+     position: absolute;
+     margin-top: 0;
+   }
+   .box1{
+     grid-row-start: 2;
+     grid-row-end: 3;
+     text-align: center;
+   }
+   .box1 p{
+     margin-top: 3rem;
+     text-align: center;
+    font-size: 15px;
+   }
+   .template-container{
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 3rem;
+     height: 13rem;
+
+   }
+   .template{
+     margin-left: 0;
+     margin-top: 1rem;
+     font-size: 25px;
+   }
+   .queries{
+     margin-left: 0;
+     margin-top: 1rem;
+
+   }
+
+
+}
