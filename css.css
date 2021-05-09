@@ -89,13 +89,13 @@ span{
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: 1fr, 1fr;
-     margin-left: 6rem;
+     margin-left: 4rem;
 
    }
    .container{
      margin:0;
      width: 100vw;
-     height: 120vh;
+     height: 150vh;
      position: relative;
    }
    .box2 img{
